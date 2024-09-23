@@ -1,3 +1,4 @@
+/*CSS RESET=======================================================================================================*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -41,6 +42,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/*FIM CSS RESET===========================================================================================================================*/
 
 
 
@@ -48,7 +50,9 @@ table {
 
 
 
-
+header{
+    margin: 0 190px 0 190px
+}
 
 .logo-e-ul p:first-child{
     font-family: Arial, Helvetica, sans-serif;
@@ -56,8 +60,9 @@ table {
 }
 .logo-e-ul{
     display: flex;
+    justify-content: space-between;
     margin-top: 2vw;
-    margin-left: 190px;
+    /*margin-left: 190px;*/
 }
 .logo-e-ul p:first-child span{
     color: white;
@@ -65,9 +70,9 @@ table {
     padding: 10px;
     border-radius: 200000px;
 }
-ul{
+ul.topo{
     display: flex;
-    margin: 0 0vw 0 1000px;
+    
     cursor: pointer;
 }
 .logo-e-ul ul li:last-child{
@@ -101,44 +106,58 @@ img.olivia{
 
 
 .container{
-    margin: 74px 227px 0 190px;
-
+    
+    display: flex;
+    justify-content: space-between;
+    margin: 74px 30vw 0 190px;
 }
+
+
+
 .container h2{
     font-size: 4rem;
 }
 .lorem{
-    margin: 21px 908px 0 0px;
+    margin: 21px 0px 0 0px;
 }
 
 
-.navegacao {
-    font-family: Arial, sans-serif;
+
+
+.itens{
+    margin: 0 0 0 200px;
     
 }
-.item {
-    margin-bottom: 20px;
-    padding: 10px 0;
-    border-bottom: 1px solid #e0e0e0;
-    margin-left: 190px;
-    margin-top: 50px;
+.tittle-itens{
+    font-size: 2.6rem;
+    
 }
-.item:last-child {
-    border-bottom: none;
+.numeracao{
+    color: rgb(161, 161, 161);
+    font-size: 1.7rem;
 }
-.numero {
-    font-size: 1.2em;
-    color: #b0b0b0;
-    font-weight: bold;
+.reducao-do-bold{
+    color: rgb(161, 161, 161);
+    font-size: 0.9rem;
 }
-.titulo {
-    font-size: 1.5em;
-    color: #333;
-    margin: 5px 0;
+.itens nav ul li.item-rrr{
+    border-bottom: 3px solid rgb(161, 161, 161);
+    padding-bottom: 10px;
+    padding-right: 100px;
+    margin-bottom: 4vw;
 }
-.subtitulo {
-    font-size: 1em;
-    color: #666;
+ 
+
+
+footer nav ul{
+    justify-content: center;
+    display: flex;
+    
+}
+footer p{
+    text-align: center;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
 
@@ -157,4 +176,5 @@ img.olivia{
 
 .linha{
     margin-right: 190px;
+    margin-bottom: 0;
 }
